@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the billing page</title>
+    <style>
+        body {
+            background-color: #a3a7ca;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            margin: 0;
+            color: #333;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td{
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+
+        }
+        th{
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+
+        }
+
+        button {
+            background-color: rgb(151, 196, 235);
+            border: none;
+            color: rgb(42, 37, 30);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+
+        }
+        button:hover {
+            background-color: rgb(151, 181, 235);
+        }
+
+    </style>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <div class="content">
+        <h1>Welcome to billing: </h1>
+        <button onclick="window.location.href='add-invoice.html'">Add an invoice</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Date</th>
+                    <th>Invoice No.</th>
+                    <th>Invoice Total</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+        </table>
+    
+    </div>
 </body>
-
 </html>
